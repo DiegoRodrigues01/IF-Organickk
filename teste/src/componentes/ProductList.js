@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import ProductItem from './ProductItem';
 import './CSS/Header.css';
+import initLocalstore, { produtoList } from './initLocalStorage';
 
 const ProductList = () => {
-    const [produtos, setProdutos] = useState([]);
+    const [produtos, setProdutos] = useState(produtoList);
 
     useEffect(() => {
         const produtosSalvos = JSON.parse(localStorage.getItem('produtos')) || [];
-        setProdutos(produtosSalvos);
+        setProdutos(produtoList);
         updateCartCount(); // Atualiza a contagem do carrinho
         updateCartUI(); // Atualiza a UI do carrinho
     }, []);

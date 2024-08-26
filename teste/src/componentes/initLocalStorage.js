@@ -1,4 +1,4 @@
-const produtos = [
+export const produtoList = [
     {
         "imagem": "https://www.comidanamesa.com.br/wp-content/uploads/2018/11/arroz.jpg",
         "nome": "Arroz 5KG",
@@ -21,4 +21,5 @@ const produtos = [
     }
 ];
 
-localStorage.setItem('produtos', JSON.stringify(produtos));
+
+
