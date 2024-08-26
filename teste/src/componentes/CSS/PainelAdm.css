@@ -1,0 +1,188 @@
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o cabeçalho */
+header.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6aa37d;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo h2 {
+    margin-right: 10px;
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: #c2fed4;
+}
+
+header .Input {
+    display: flex;
+    align-items: center;
+}
+
+header .Input input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+header .menu-login {
+    display: flex;
+    align-items: center;
+}
+
+header .menu-login ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+header .menu-login ul li {
+    margin: 0;
+}
+
+header .menu-login a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .menu-login a:hover {
+    text-decoration: underline;
+}
+
+header #carrinho {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header #cart-count {
+    margin-left: 5px;
+}
+
+/* Estilo para o menu de navegação */
+section.menu-opcao {
+    background-color: #63806c;
+    padding: 10px;
+}
+
+section.menu-opcao ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+section.menu-opcao ul li {
+    margin: 0;
+}
+
+section.menu-opcao a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section.menu-opcao a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o formulário de produtos */
+main {
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #6aa37d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #558d5d;
+}
+
+/* Estilo para a lista de produtos */
+#produtosList {
+    margin-top: 20px;
+}
+
+#produtosList h2 {
+    margin-bottom: 10px;
+}
+
+#produtosUl {
+    list-style: none;
+}
+
+#produtosUl li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#produtosUl img {
+    margin-right: 10px;
+}
+
+#produtosUl button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#produtosUl button:hover {
+    background-color: #c9302c;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

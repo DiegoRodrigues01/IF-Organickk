@@ -1,0 +1,225 @@
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para a caixa do header */
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #6aa37d;
+    padding: 5%;
+    height: 86px;
+    font-family: sans-serif;
+}
+
+/* Estilo para o menu de login */
+.menu-login ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    gap: 1%;
+    list-style: none; /* Remove bolinhas dos itens */
+    padding: 0; /* Remove padding padrão */
+}
+ul li{
+    list-style: none;
+    text-align: center;
+}
+
+/* Estilo para o menu de navegação */
+.menu-opcao ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12%;
+    list-style: none; /* Remove bolinhas dos itens */
+    text-decoration: none;
+    background-color: #63806c;
+    font-size: 20px;
+    padding: 0; /* Remove padding padrão */
+}
+
+/* Estilo para o container de produtos */
+.product {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 produtos por linha */
+    gap: 20px; /* Espaçamento entre os produtos */
+    background-color: rgba(224, 217, 217, 0.77);
+    padding: 20px;
+}
+
+/* Estilo para cada item de produto */
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem do produto */
+.item .imagem img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: rgb(195, 186, 186) 0px 0px 0px 1.5px;
+}
+
+/* Estilo para o botão de compra */
+.btn > button {
+    width: 100%;
+    height: 26px;
+    background-color: #6aa37d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Estilo para links */
+a {
+    list-style: none; /* Remove bolinhas dos links */
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Estilo para input */
+input {
+    width: 520px;
+    height: 26px;
+    border: none;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+/* Estilo para o container do input */
+.Input {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo para o logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px;
+    gap: 5px;
+    background-color: rgb(90, 90, 175);
+}
+
+#search {
+    position: absolute;
+    left: 480px;
+}
+
+#carrinho {
+    position: absolute;
+    left: 70%;
+    color: white;
+}
+
+/* Estilo para o corpo */
+body {
+    background-color: rgb(233, 239, 233);
+    padding-bottom: 100px; /* Garantir que o footer não sobreponha o conteúdo */
+}
+
+/* Estilo para o footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .caixa {
+        flex-direction: column;
+        height: auto;
+        padding: 3%;
+    }
+    
+    .menu-login ul,
+    .menu-opcao ul {
+        flex-direction: column;
+        gap: 5%;
+        text-align: center;
+    }
+    
+    .menu-opcao ul {
+        padding: 5%;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .product {
+        grid-template-columns: 1fr; /* 1 produto por linha em dispositivos móveis */
+        gap: 10px; /* Espaçamento menor entre produtos em dispositivos móveis */
+    }
+
+    .item {
+        width: 100%;
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    #search {
+        display: fixed;
+        left: -50%;
+    }
+
+    #carrinho {
+        padding-top: 1px;
+    }
+}
+
+/* Estilo para a mensagem de boas-vindas */
+.welcome-message {
+    padding: 20px;
+    background-color: #f2f9f2;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.welcome-message h1 {
+    color: #4a8a2e;
+}
+
+.welcome-message p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
