@@ -36,7 +36,7 @@ function TelaCompra() {
       })
       .catch((err) => console.log(err))
       .finally(() => {
-        window.location.href = "login.html";
+        window.location.href = "login";
       });
     } else {
       alert("Email não encontrado. Por favor, faça login.");
